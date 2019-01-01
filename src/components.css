@@ -1,0 +1,174 @@
+/*
+colors:
+action/main: #F15249
+background: white
+accent: #395739
+*/
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+i {
+  margin: 0px 10px 0px 10px;
+}
+
+.DrumMachine {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.PadPanel {
+  display: grid;
+  min-width: 400px;
+  height: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.pad {
+  background-color: #F15249;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pad:active {
+  transform: translateY(4px);
+}
+
+.keyPressedPad {
+  transform: translateY(4px);
+}
+
+.pad:focus {
+  outline: none;
+}
+
+.letter {
+  font-size: 20px;
+  user-select: none;
+}
+
+/* controls styling*/
+
+.Controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.controlItem {
+  margin: 10px 0px 10px 0px;
+}
+
+.Display {
+  height: 30px;
+  width: 150px;
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  border: 3px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soundLabel {
+
+}
+
+.powerLabel {
+  font-size: 15px;
+  margin: 0px;
+  color: black;
+  font-family: 'Righteous', cursive;
+}
+
+.powerSwitch {
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  margin-top: 5px;
+}
+
+.switchToggle {
+  background-color: #F15249;
+  min-width: 50%;
+}
+
+/* on/off conditional classes for power switch */
+.on {
+  justify-content: flex-end;
+}
+
+.off {
+  justify-content: flex-start;
+  opacity: 0.5;
+}
+
+/* range formatting un-abashedly ripped from another source, since formatting range inputs is such a pain */
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 13.8px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  border: 3px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #fffffb;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  border: 3px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #fffffb;
+  cursor: pointer;
+}
