@@ -3,4 +3,4 @@ Drum machine project for FreeCodeCamp, built with React. It was a deceptively co
 * Binding functions to 'this', so that function A can call function B, with each keeping their respective 'this'
 * Using ES6 arrow functions to bind originating context and be able to access props in the originating context
 * Making setState synchronous will callback functions
-* Using the React devtools to troubleshoot state changes and passing of props.
+* Using the React devtools to troubleshoot state changes and passing of props
